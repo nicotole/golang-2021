@@ -6,12 +6,12 @@ import (
 
 type Result struct {
 	Type   string
-	Value  string
 	Length int
+	Value  string
 }
 
-func NewResult(Type string, Value string, Length int) Result {
-	return Result{Type, Value, Length}
+func NewResult(Type string, Length int, Value string) Result {
+	return Result{Type, Length, Value}
 }
 
 func GetStructure(chain string) Result {
@@ -20,9 +20,9 @@ func GetStructure(chain string) Result {
 	Value := chain[4:]
 	LengthInt, err := strconv.Atoi(LengthStr) //convierte string en int
 	if err == nil {
-		return NewResult(Type, Value, LengthInt)
+		return NewResult(Type, LengthInt, Value)
 	} else {
-		return NewResult("Error", "Error", 00)
+		return NewResult("Error", 00, "Error")
 	}
 
 }
