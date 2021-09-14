@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"entregableGo/model"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello")
-
+	p := model.NewResult("Nico", "Sape", 10)
+	fmt.Println(p)
 }
