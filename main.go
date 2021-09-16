@@ -14,4 +14,5 @@ func main() {
 	fmt.Println("----------------")
 	fmt.Print(model.GetStructure("TX03ABC"))
 	fmt.Print(model.GetStructure("TX03ABC"))
+	// comentario de prueba
 }
