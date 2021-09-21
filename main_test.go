@@ -7,10 +7,12 @@ import (
 )
 
 func TestInputChains(t *testing.T) {
-	chainTest := "TX040001"
+	//chainTest := "TX040001"
+	chainTest := "TB020"
 	result := model.GetStructure(chainTest)
 	st := model.NewResult("TX", 04, "0001")
 	if result != st {
 		fmt.Println("No funciona")
 	}
+
 }
