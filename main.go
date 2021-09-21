@@ -13,5 +13,8 @@ func main() {
 	fmt.Print(model.GetStructure("NN040001"))
 	fmt.Println("----------------")
 	fmt.Print(model.GetStructure("TX03ABC"))
-	fmt.Print(model.GetStructure("TX03ABC"))
+	fmt.Println("----------------")
+	fmt.Print(model.GetStructure("TX02ABC"))
+	fmt.Println("----------------")
+	fmt.Print(model.GetStructure("TX0JABC"))
 }
