@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println("JP recomendation")
 	fmt.Println(model.GetStructure("Nico"))
 	fmt.Println("----------------")
 	fmt.Print(model.GetStructure("NN040001"))
