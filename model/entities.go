@@ -2,6 +2,7 @@ package model
 
 import (
 	"errors"
+	"fmt"
 	"strconv"
 )
 
@@ -18,6 +19,7 @@ func NewResult(Type string, Length int, Value string) Result {
 }
 
 func GetStructure(chain string) (*Result, error) {
+	fmt.Println("JP recomendation")
 	if len(chain) >= minLen {
 		Type := chain[0:2]
 		LengthStr := chain[2:4]
@@ -32,5 +34,4 @@ func GetStructure(chain string) (*Result, error) {
 	} else {
 		return nil, errors.New("Cadena invalida: " + chain)
 	}
-
 }
